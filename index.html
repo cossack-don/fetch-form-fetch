@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+
+        <div @click="getInfo()">333 <br>
+        {{m}}
+        </div>
+
+      </div>
+      
+      <div id="app2">
+        {{ message }}
+      </div>
+
+<!-- FORMA -->
+      <!-- <form class="form-one" >
+        <input type="text" name="Имя">
+        <input type="tel" name="Телефон">
+        <input type="email" name="E-mail">
+        <textarea name="Сообщение"></textarea>
+        <button>Отправить</button>
+      </form> -->
+
+    <!-- Form JSON формат -->
+    <form>
+      <input type="text" name="Имя" class="name-value">
+      <input type="tel" name="Телефон" class="tel-value">
+      <input type="email" name="E-mail" class="email-value">
+      <textarea name="Сообщение" class="textarea-value"></textarea>
+      <button>Отправить</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
